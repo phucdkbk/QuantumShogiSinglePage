@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My page</title>
+
+        <!-- CSS dependencies -->
+<!--        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">-->
+    </head>
+    <body>
+
+        <p>Content here. <a class="hello" href=#>Alert!</a></p>
+        
+        <span onclick ="checkAlert();">Hello</span>
+
+        <!-- JS dependencies -->
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="bootstrap.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <!-- Optional theme -->
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">-->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+        <!-- bootbox code -->
+        <script src="bootbox.js"></script>
+        <script>
+            $(document).on("click", ".hello", function(e) {
+                bootbox.confirm("Hello world!", function(result) {
+                    console.log("Alert Callback" + result);
+                });
+            });
+            checkAlert = function(){
+                bootbox.confirm("Hello world!", function() {
+                    console.log("Alert Callback");
+                });
+            };
+        </script>
+    </body>
+</html> 
