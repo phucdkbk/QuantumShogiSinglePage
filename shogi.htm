@@ -7797,7 +7797,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
             getStoreCaptureCellWhenMove = function() {
                 var i, j;
 
-                for (i = 0; i < 2; i++) {
+                for (i = 0; i < 3; i++) {
                     for (j = 0; j < 9; j++) {
                         if (!isContainPieces(document.getElementById('capturePlayer2_' + i + '_' + j))) {
                             return document.getElementById('capturePlayer2_' + i + '_' + j);
@@ -7809,7 +7809,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
             getStoreCaptureCellWhenRefresh = function() {
                 var i, j;
-                for (i = 1; i >= 0; i--) {
+                for (i = 2; i >= 0; i--) {
                     for (j = 8; j >= 0; j--) {
                         if (!isContainPieces(document.getElementById('capturePlayer1_' + i + '_' + j))) {
                             return document.getElementById('capturePlayer1_' + i + '_' + j);
@@ -13223,6 +13223,38 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
                                 </td>
 
                             </tr>
+							
+							
+							<tr>
+
+                                <td id="capturePlayer1_2_0" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_1" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_2" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_3" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_4" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_5" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_6" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_7" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer1_2_8" onclick="clickOnCell(this);">
+                                </td>
+
+                            </tr>
 
                         </tbody></table>
                 </div>
@@ -13531,6 +13563,37 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
                                 </td>
 
                                 <td id="capturePlayer2_1_8" onclick="clickOnCell(this);">
+                                </td>
+
+                            </tr>
+							
+							<tr>
+
+                                <td id="capturePlayer2_2_0" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_1" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_2" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_3" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_4" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_5" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_6" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_7" onclick="clickOnCell(this);">
+                                </td>
+
+                                <td id="capturePlayer2_2_8" onclick="clickOnCell(this);">
                                 </td>
 
                             </tr>
@@ -14441,7 +14504,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
                             document.getElementById('chessCell_' + i + '_' + j).innerHTML = "";
                         }
                     }
-                    for (i = 0; i < 2; i++) {
+                    for (i = 0; i < 3; i++) {
                         for (j = 0; j < 9; j++) {
                             document.getElementById('capturePlayer1_' + i + '_' + j).innerHTML = "";
                             document.getElementById('capturePlayer2_' + i + '_' + j).innerHTML = "";
@@ -14761,7 +14824,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
                         }
                     }
 
-                    for (i = 0; i < 2; i++) {
+                    for (i = 0; i < 3; i++) {
                         for (j = 0; j < 9; j++) {
                             document.getElementById('capturePlayer1_' + i + '_' + j).style.backgroundColor = "transparent";
                             document.getElementById('capturePlayer2_' + i + '_' + j).style.backgroundColor = "transparent";
